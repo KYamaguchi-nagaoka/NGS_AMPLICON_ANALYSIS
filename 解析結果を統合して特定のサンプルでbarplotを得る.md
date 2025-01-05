@@ -28,35 +28,35 @@ qiime feature-table merge-taxa \
 
 ```
 #SampleID	Description
-Tokyo1-normal	1.Tokyo1-normal
-Tokyo2-normal	2.Tokyo2-normal
-Tokyo3-normal	3.Tokyo3-normal
-Tokyo1-mochi	4.Tokyo1-mochi
-Tokyo2-mochi	5.Tokyo2-mochi
-Tokyo3-mochi	6.Tokyo3-mochi
-Kyoto-0518	7.Kyoto-0518
-Kyoto-1125	8.Kyoto-1125
-Kyoto-0129	9.Kyoto-0129
-Komaki-0518	10.Komaki-0518
-Komaki-1125	11.Komaki-1125
-Komaki-0129	12.Komaki-0129
+A-normal	1.A-normal
+B-normal	2.B-normal
+C-normal	3.C-normal
+A-01	4.A-01
+B-01	5.B-01
+C-01	6.C-01
+A-02	7.A-02
+B-02	8.B-02
+C-02	9.C-02
+A-03	10.A-03
+B-03	11.B-03
+C-03	12.C-03
 Before	13.Before
 After	14.After
-0823	15.0823
-0906	16.0906
-0912	17.0912
-0922	18.0922
-1003	19.1003
-1019	20.1019
-1026	21.1026
-1109	22.1109
-1121	23.1121
-1206	24.1206
-1219	25.1219
-0118	26.0118
-0201	27.0201
-0222	28.0222
-0321	29.0321
+001	15.001
+002	16.002
+003	17.003
+004	18.004
+005	19.005
+006	20.006
+007	21.007
+008	22.008
+009	23.009
+010	24.010
+011	25.011
+012	26.012
+013	27.013
+014	28.014
+015	29.015
 
 ```
 - SQLでSample_idを抽出
@@ -64,7 +64,7 @@ After	14.After
 qiime feature-table filter-samples \
   --i-table merged-table.qza \
   --m-metadata-file map.txt \
-  --p-where "Sample-id IN ('Tokyo1-normal', '0321', '1219')" \
+  --p-where "Sample-id IN ('A-normal', '005', '012')" \
   --o-filtered-table filtered-table.qza
 ```
 
