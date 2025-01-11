@@ -74,7 +74,7 @@ qiime taxa barplot \
   --i-table filtered-table.qza \
   --i-taxonomy merged-taxonomy.qza \
   --m-metadata-file map.txt \
-  --o-visualization taxa-bar-plots.qzv
+  --o-visualization taxa-barplot.qzv
 ```
 ### オプション:htmlに変換
 ```
