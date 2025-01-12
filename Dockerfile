@@ -67,15 +67,17 @@ RUN conda config --add channels defaults && \
     conda clean -y --all
 
 # QIIME 2 のインストール
-RUN wget https://data.qiime2.org/distro/core/qiime2-2023.5-py38-linux-conda.yml && \
-    conda env create -n qiime2-2023.5 --file qiime2-2023.5-py38-linux-conda.yml && \
+#conda env create -n qiime2-amplicon-2024.10 --file https://data.qiime2.org/distro/amplicon/qiime2-amplicon-2024.10-py310-linux-conda.yml
+RUN wget https://data.qiime2.org/distro/amplicon/qiime2-amplicon-2024.10-py310-linux-conda.yml && \
+    conda env create -n qiime2-amplicon-2024.10 --file qiime2-amplicon-2024.10-py310-linux-conda.yml && \
     conda clean -y --all && \
-    echo "source activate qiime2-2023.5" >> ~/.bashrc && \
-    rm qiime2-2023.5-py38-linux-conda.yml
+    echo "source activate qiime2-amplicon-2024.10" >> ~/.bashrc && \
+    rm qiime2-amplicon-2024.10-py310-linux-conda.yml
+
 
 # 作業ディレクトリの設定
 WORKDIR /data
 
 # コンテナ起動時のデフォルトコマンド
-CMD ["bash"]
+CMD ["/bin/bash", "-c", "source /opt/conda/etc/profile.d/conda.sh && conda activate qiime2-amplicon-2024.10 && bash"]
 
