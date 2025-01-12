@@ -16,7 +16,9 @@
 ```
 ##### 上記の環境をdockerで構築する　
 
-  docker pull kei1201/ngs-bioinformatics:qiime2-amplicon-2024.10　
+  ```
+docker pull kei1201/ngs-bioinformatics:qiime2-amplicon-2024.10
+```
 
 ### ワークフローオプション 
 
