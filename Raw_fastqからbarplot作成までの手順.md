@@ -124,7 +124,8 @@ flash2 -f 310 -r 230 -m 10 -o merge_R1_R2 output_R1_HQ.fastq output_R2_HQ.fastq
 - classifierフォルダを作成
 -[リンク](https://docs.qiime2.org/2024.10/data-resources/)からGreengenes (16S rRNA) 13_8をダウンロードして解凍
 - classifierに99_otu_taxonomy,99_otu.fastaを入れる
-- classifierに移動して下記のコマンドを順に実行
+- classifierに移動
+- 下記のコマンドを順に実行
 ```
 qiime tools import \
  --type 'FeatureData[Sequence]' \
