@@ -146,9 +146,6 @@ qiime feature-classifier fit-classifier-naive-bayes \
  --i-reference-taxonomy ref-taxonomy.qza \
  --o-classifier classifier.qza
 
-qiime feature-classifier classify-sklearn --i-classifier ./classifier.qza --i-reads repset.qza --o-classification taxonomy.qza
-
-qiime taxa barplot --i-table table.qza --i-taxonomy taxonomy.qza --m-metadata-file map.txt --o-visualization taxa-barplot.qzv
 ```
 
 
