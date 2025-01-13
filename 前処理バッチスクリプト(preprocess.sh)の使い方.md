@@ -13,7 +13,7 @@
       |_16S-R.txt
       |_preprocess.sh
       |_classifier
-           |_classifier.qza
+           |_classifier.qza(学習済みの分類器)
    ```
 
 5. docker run -v 作業ファイルディレクトリ:/data -it ビルドしたdocker imageの名前
