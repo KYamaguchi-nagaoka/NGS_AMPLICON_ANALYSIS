@@ -121,7 +121,7 @@ flash2 -f 310 -r 230 -m 10 -o merge_R1_R2 output_R1_HQ.fastq output_R2_HQ.fastq
 
 
 #### 分類器作成(greenegenes 13_8) [参考リンク](https://note.com/nanaimo_/n/n601094548c2c) 
-- classifierフォルダを作成 
+- classifierフォルダを作成 <br>
 -[リンク](https://docs.qiime2.org/2024.10/data-resources/)からGreengenes (16S rRNA) 13_8をダウンロードして解凍
 - classifierに99_otu_taxonomy,99_otu.fastaを入れる
 - classifierに移動
