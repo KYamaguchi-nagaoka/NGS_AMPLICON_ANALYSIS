@@ -15,9 +15,9 @@
 - qiime2
 ```
 ##### 上記の環境をdockerで構築する　
-- dockerデスクトップをインストールしてDockerfileをビルド  [参考リンク](https://qiita.com/YumaInaura/items/e7155b309e109bc75cf8)
+- dockerデスクトップをインストールしてDockerfileをビルド  [参考リンク](https://qiita.com/YumaInaura/items/e7155b309e109bc75cf8) 
 
-  ```
+```
 docker pull kei1201/ngs-bioinformatics:qiime2-amplicon-2024.10
 ```
 
