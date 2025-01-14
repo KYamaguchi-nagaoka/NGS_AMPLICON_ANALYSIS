@@ -17,6 +17,5 @@
 
 4. docker run -v 作業ファイルディレクトリ:/data -it ビルドしたdocker imageの名前
 5. ```
-   ./preprocess
+   ./preprocess # コマンドを実行
    ```
-   ##### コマンドを実行
