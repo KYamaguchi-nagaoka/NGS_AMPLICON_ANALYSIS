@@ -1,9 +1,8 @@
-## フォルダ内のRaw-fastqからbarplotを作成するpreprocess.shの使い方
-1. dockerデスクトップをインストールしてDockerfileをビルド  [参考リンク](https://qiita.com/YumaInaura/items/e7155b309e109bc75cf8)
+## フォルダ内のRaw-fastqからbarplotを作成するpreprocess.shの使い方 
 
-2. Raw-fastqの中の.fastqとmap.txt(.fastqに対応するように編集)を新しい作業ファイルにコピー
-3. 16S-F.txt,16S-R.txtとgreenegenes13_8とプライマー配列で学習済みの分類器(classifier.qza)が入ったclassifierフォルダを作業フォルダに用意
-4. preprocess.shを作業フォルダにコピー
+1. Raw-fastqの中の.fastqとmap.txt(.fastqに対応するように編集)を新しい作業ファイルにコピー
+2. 16S-F.txt,16S-R.txtとgreenegenes13_8とプライマー配列で学習済みの分類器(classifier.qza)が入ったclassifierフォルダを作業フォルダに用意
+3. preprocess.shを作業フォルダにコピー
    ```
    作業フォルダ
       |_XXXX_L001_R1_001.fastq(.gzファイル)
@@ -16,5 +15,5 @@
            |_classifier.qza(学習済みの分類器)
    ```
 
-5. docker run -v 作業ファイルディレクトリ:/data -it ビルドしたdocker imageの名前
-6. ./preprocessコマンドを実行
+4. docker run -v 作業ファイルディレクトリ:/data -it ビルドしたdocker imageの名前
+5.  ./preprocessコマンドを実行
