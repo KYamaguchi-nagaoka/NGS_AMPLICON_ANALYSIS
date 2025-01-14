@@ -20,6 +20,10 @@
 docker pull kei1201/ngs-bioinformatics:qiime2-amplicon-2024.10
 ```
 
+```
+docker run -v 'ワークフォルダのパス':/data -it --rm kei1201/ngs-bioinformatics:2024.10
+```
+
 ### ワークフローオプション 
 
 A. 単純にqiime2の解析結果を統合して特定のサンプルを抽出後、taxa-barplotを作成[(詳細)](解析結果を統合して特定のサンプルでbarplotを得る.md)
