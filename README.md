@@ -3,10 +3,15 @@
 ### 用途  
  業者に外注したバッチの異なるアンプリコンシーケンス解析結果を統合してバッチの異なるサンプル間でtaxa-barplotを作成する
 
-### アンプリコン作成に使用したプライマー配列　
-- 1st-515f_MIX※2 ACACTCTTTCCCTACACGACGCTCTTCCGATCT-NNNNN-GTGCCAGCMGCCGCGGTAA
-- 1st-806r_MIX※2 GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT-NNNNN-GGACTACHVGGGTWTCTAAT
-##### ※2 シーケンス解析時における品質向上を目的として、0-5塩基の異なる長さのランダム配列が挿入された混合プライマーを使用 
+### アンプリコン作成に使用したプライマー配列
+
+- **1st-515f_MIX<sup>※2</sup>**:  
+  `ACACTCTTTCCCTACACGACGCTCTTCCGATCT-NNNNN-GTGCCAGCMGCCGCGGTAA`
+  
+- **1st-806r_MIX<sup>※2</sup>**:  
+  `GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT-NNNNN-GGACTACHVGGGTWTCTAAT`
+
+##### <sup>※2</sup> シーケンス解析時における品質向上を目的として、0-5塩基の異なる長さのランダム配列が挿入された混合プライマーを使用
 
 ### 解析環境
 ```
